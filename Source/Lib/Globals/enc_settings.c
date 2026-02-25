@@ -1125,7 +1125,7 @@ void svt_av1_print_lib_params(SequenceControlSet *scs) {
                                                             : "Unknown color format");
 
         if (config->color_primaries != 2 || config->transfer_characteristics != 2 || config->matrix_coefficients != 2) {
-            SVT_INFO("SVT [config]: Color prim / Transfer char / Matrix coeff \t\t\t: %s / %s / %s\n",
+            SVT_INFO("SVT [config]: color prim / transfer char / matrix coeff \t\t\t: %s / %s / %s\n",
                 config->color_primaries == 1 ?  "bt709" :
                 config->color_primaries == 2 ?  "unspecified" :
                 config->color_primaries == 4 ?  "bt470m" :
@@ -1233,7 +1233,7 @@ void svt_av1_print_lib_params(SequenceControlSet *scs) {
                          config->aq_mode,
                          config->enable_variance_boost);
             } else {
-                SVT_INFO("SVT [config]: AQ mode / Variance Boost strength / octile / curve \t\t: %d / %d / %d / %d\n",
+                SVT_INFO("SVT [config]: AQ mode / variance Boost strength / octile / curve \t\t: %d / %d / %d / %d\n",
                          config->aq_mode,
                          config->variance_boost_strength,
                          config->variance_octile,
@@ -1264,20 +1264,20 @@ void svt_av1_print_lib_params(SequenceControlSet *scs) {
 
         switch (config->enable_tf) {
             case 1:
-                SVT_INFO("SVT [config]: Temporal filtering strength / keyframe strength \t\t: %d / %d \n",
+                SVT_INFO("SVT [config]: temporal filtering strength / keyframe strength \t\t: %d / %d \n",
                     config->tf_strength,
                     config->kf_tf_strength
                 );
                 break;
             case 2:
-                SVT_INFO("SVT [config]: Temporal Filtering strength\t\t\t\t\t: auto\n");
+                SVT_INFO("SVT [config]: temporal Filtering strength\t\t\t\t\t: auto\n");
                 break;
         }
 
         SVT_INFO("SVT [config]: QP scale compress strength \t\t\t\t\t: %.2f\n", config->qp_scale_compress_strength);
 
         if (config->ac_bias || config->tx_bias) {
-            SVT_INFO("SVT [config]: AC Bias Strength / TX Bias \t\t\t\t\t: %.2f / %s\n",
+            SVT_INFO("SVT [config]: AC bias strength / TX bias \t\t\t\t\t: %.2f / %s\n",
                 config->ac_bias,
                 config->tx_bias == 1 ? "full (1)" :
                 config->tx_bias == 2 ? "size only (2)" :
@@ -1287,11 +1287,11 @@ void svt_av1_print_lib_params(SequenceControlSet *scs) {
         }
 
         if (config->noise_norm_strength > 0) {
-            SVT_INFO("SVT [config]: Noise Normalization Strength \t\t\t\t\t: %d\n", config->noise_norm_strength);
+            SVT_INFO("SVT [config]: noise normalization strength \t\t\t\t\t: %d\n", config->noise_norm_strength);
         }
 
         if (config->noise_adaptive_filtering > 0) {
-            SVT_INFO("SVT [config]: Noise Adaptive Filtering \t\t\t\t\t: %s\n",
+            SVT_INFO("SVT [config]: noise adaptive filtering \t\t\t\t\t: %s\n",
                 config->noise_adaptive_filtering == 1 ? "CDEF/Restoration on (1)" :
                 config->noise_adaptive_filtering == 2 ? "Default tune (2)" :
                 config->noise_adaptive_filtering == 3 ? "CDEF only (3)" :
@@ -1308,7 +1308,7 @@ void svt_av1_print_lib_params(SequenceControlSet *scs) {
         }
 
         if (config->enable_qm == 1) {
-            SVT_INFO("SVT [config]: Quantization matrices min / max / chroma-min / chroma-max \t: %d / %d / %d / %d\n",
+            SVT_INFO("SVT [config]: quantization matrices min / max / chroma-min / chroma-max \t: %d / %d / %d / %d\n",
                 config->min_qm_level,
                 config->max_qm_level,
                 config->min_chroma_qm_level,
@@ -1317,17 +1317,17 @@ void svt_av1_print_lib_params(SequenceControlSet *scs) {
         }
 
         if (config->alt_lambda_factors == 1) {
-            SVT_INFO("SVT [config]: Alternate RDO lambda factors \t\t\t\t\t: %d\n",
+            SVT_INFO("SVT [config]: alternate RDO lambda factors \t\t\t\t\t: %d\n",
                 config->alt_lambda_factors);
         }
 
         if (config->sharp_tx == 1) {
-            SVT_INFO("SVT [config]: Sharp transform optimization \t\t\t\t\t: %d\n",
+            SVT_INFO("SVT [config]: sharp transform optimization \t\t\t\t\t: %d\n",
                 config->sharp_tx);
         }
 
         if (config->complex_hvs == 1 || config->hbd_mds != 0) {
-            SVT_INFO("SVT [config]: highest complexity HVS model / High bit-depth mode decisions \t: %d / %s\n",
+            SVT_INFO("SVT [config]: highest complexity HVS model / high bit-depth mode decisions \t: %d / %s\n",
                 config->complex_hvs,
                 config->hbd_mds == 0 ? "Preset (0)" :
                 config->hbd_mds == 1 ? "10-bit (1)" :
