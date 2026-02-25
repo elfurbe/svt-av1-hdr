@@ -1235,9 +1235,9 @@ void svt_av1_print_lib_params(SequenceControlSet *scs) {
         if (config->ac_bias || config->tx_bias) {
             SVT_INFO("SVT [config]: AC Bias Strength / TX Bias \t\t\t\t\t: %.2f / %s\n",
                 config->ac_bias,
-                config->tx_bias == 1 ? "full" :
-                config->tx_bias == 2 ? "size only" :
-                config->tx_bias == 3 ? "interp. only" :
+                config->tx_bias == 1 ? "full (1)" :
+                config->tx_bias == 2 ? "size only (2)" :
+                config->tx_bias == 3 ? "interp. only (3)" :
                                        "off"
             );
         }
@@ -1248,10 +1248,10 @@ void svt_av1_print_lib_params(SequenceControlSet *scs) {
 
         if (config->noise_adaptive_filtering > 0) {
             SVT_INFO("SVT [config]: Noise Adaptive Filtering \t\t\t\t\t: %s\n",
-                config->noise_adaptive_filtering == 1 ? "CDEF/Restoration on" :
-                config->noise_adaptive_filtering == 2 ? "Default tune" :
-                config->noise_adaptive_filtering == 3 ? "CDEF only" :
-                config->noise_adaptive_filtering == 4 ? "Restoration only" :
+                config->noise_adaptive_filtering == 1 ? "CDEF/Restoration on (1)" :
+                config->noise_adaptive_filtering == 2 ? "Default tune (2)" :
+                config->noise_adaptive_filtering == 3 ? "CDEF only (3)" :
+                config->noise_adaptive_filtering == 4 ? "Restoration only (4)" :
                                                         "unknown"
             );
         }
@@ -1283,11 +1283,11 @@ void svt_av1_print_lib_params(SequenceControlSet *scs) {
         }
 
         if (config->complex_hvs == 1 || config->hbd_mds != 0) {
-            SVT_INFO("SVT [config]: highest complexity HVS model / High bit-depth mode \t\t: %d / %s\n",
+            SVT_INFO("SVT [config]: highest complexity HVS model / High bit-depth mode decisions \t: %d / %s\n",
                 config->complex_hvs,
-                config->hbd_mds == 0 ? "Preset" :
-                config->hbd_mds == 1 ? "10-bit" :
-                config->hbd_mds == 2 ? "8/10-bit" :
+                config->hbd_mds == 0 ? "Preset (0)" :
+                config->hbd_mds == 1 ? "10-bit (1)" :
+                config->hbd_mds == 2 ? "8/10-bit (2)" :
                                        "unknown"
             );
         }
