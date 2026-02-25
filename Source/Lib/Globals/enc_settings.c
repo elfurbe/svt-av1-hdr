@@ -1125,10 +1125,54 @@ void svt_av1_print_lib_params(SequenceControlSet *scs) {
                                                             : "Unknown color format");
 
         if (config->color_primaries != 2 || config->transfer_characteristics != 2 || config->matrix_coefficients != 2) {
-            SVT_INFO("SVT [config]: Color prim / Transfer char / Matrix coeff \t\t\t: %d / %d / %d\n",
-                    config->color_primaries,
-                    config->transfer_characteristics,
-                    config->matrix_coefficients);
+            SVT_INFO("SVT [config]: Color prim / Transfer char / Matrix coeff \t\t\t: %s / %s / %s\n",
+                config->color_primaries == 1 ?  "bt709" :
+                config->color_primaries == 2 ?  "unspecified" :
+                config->color_primaries == 4 ?  "bt470m" :
+                config->color_primaries == 5 ?  "bt470bg" :
+                config->color_primaries == 6 ?  "bt601" :
+                config->color_primaries == 7 ?  "smpte240" :
+                config->color_primaries == 8 ?  "film" :
+                config->color_primaries == 9 ?  "bt2020" :
+                config->color_primaries == 10 ? "xyz" :
+                config->color_primaries == 11 ? "smpte431" :
+                config->color_primaries == 12 ? "smpte432" :
+                config->color_primaries == 22 ? "ebu3213" :
+                                                "unknown",
+                config->transfer_characteristics == 1 ?  "bt709" :
+                config->transfer_characteristics == 2 ?  "unspecified" :
+                config->transfer_characteristics == 4 ?  "bt470m" :
+                config->transfer_characteristics == 5 ?  "bt470bg" :
+                config->transfer_characteristics == 6 ?  "bt601" :
+                config->transfer_characteristics == 7 ?  "smpte240" :
+                config->transfer_characteristics == 8 ?  "linear" :
+                config->transfer_characteristics == 9 ?  "log100" :
+                config->transfer_characteristics == 10 ? "log100-sqrt10" :
+                config->transfer_characteristics == 11 ? "iec61966" :
+                config->transfer_characteristics == 12 ? "bt1361" :
+                config->transfer_characteristics == 13 ? "srgb" :
+                config->transfer_characteristics == 14 ? "bt2020-10" :
+                config->transfer_characteristics == 15 ? "bt2020-12" :
+                config->transfer_characteristics == 16 ? "smpte2084" :
+                config->transfer_characteristics == 17 ? "smpte428" :
+                config->transfer_characteristics == 18 ? "hlg" :
+                                                         "unknown",
+                config->matrix_coefficients == 0 ?  "identity" :
+                config->matrix_coefficients == 1 ?  "bt709" :
+                config->matrix_coefficients == 2 ?  "unspecified" :
+                config->matrix_coefficients == 4 ?  "fcc" :
+                config->matrix_coefficients == 5 ?  "bt470bg" :
+                config->matrix_coefficients == 6 ?  "bt601" :
+                config->matrix_coefficients == 7 ?  "smpte240" :
+                config->matrix_coefficients == 8 ?  "ycgco" :
+                config->matrix_coefficients == 9 ?  "bt2020-ncl" :
+                config->matrix_coefficients == 10 ? "bt2020-cl" :
+                config->matrix_coefficients == 11 ? "smpte2085" :
+                config->matrix_coefficients == 12 ? "chroma-ncl" :
+                config->matrix_coefficients == 13 ? "chroma-cl" :
+                config->matrix_coefficients == 14 ? "ictcp" :
+                                                    "unknown"
+            );
         }
 
         SVT_INFO("SVT [config]: preset / tune / pred struct \t\t\t\t\t: %d / %s%s / %s\n",
