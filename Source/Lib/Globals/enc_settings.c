@@ -1214,64 +1214,82 @@ void svt_av1_print_lib_params(SequenceControlSet *scs) {
             }
         }
         SVT_INFO("SVT [config]: sharpness / luminance-based QP bias \t\t\t\t: %d / %d\n",
-                 config->sharpness,
-                 config->luminance_qp_bias);
+            config->sharpness,
+            config->luminance_qp_bias
+        );
 
         switch (config->enable_tf) {
-        case 1:
-            SVT_INFO("SVT [config]: Temporal filtering strength / keyframe strength \t\t: %d / %d \n",
-                     config->tf_strength,
-                     config->kf_tf_strength);
-            break;
-        case 2: SVT_INFO("SVT [config]: Temporal Filtering strength\t\t\t\t\t: auto\n"); break;
+            case 1:
+                SVT_INFO("SVT [config]: Temporal filtering strength / keyframe strength \t\t: %d / %d \n",
+                    config->tf_strength,
+                    config->kf_tf_strength
+                );
+                break;
+            case 2:
+                SVT_INFO("SVT [config]: Temporal Filtering strength\t\t\t\t\t: auto\n");
+                break;
         }
 
         SVT_INFO("SVT [config]: QP scale compress strength \t\t\t\t\t: %.2f\n", config->qp_scale_compress_strength);
 
         if (config->ac_bias || config->tx_bias) {
             SVT_INFO("SVT [config]: AC Bias Strength / TX Bias \t\t\t\t\t: %.2f / %s\n",
-                     config->ac_bias,
-                     config->tx_bias == 1
-                         ? "full"
-                         : (config->tx_bias == 2 ? "size only" : (config->tx_bias == 3 ? "interp. only" : "off")));
+                config->ac_bias,
+                config->tx_bias == 1 ? "full" :
+                config->tx_bias == 2 ? "size only" :
+                config->tx_bias == 3 ? "interp. only" :
+                                       "off"
+            );
         }
 
         if (config->noise_norm_strength > 0) {
             SVT_INFO("SVT [config]: Noise Normalization Strength \t\t\t\t\t: %d\n", config->noise_norm_strength);
         }
 
+        if (config->noise_adaptive_filtering > 0) {
+            SVT_INFO("SVT [config]: Noise Adaptive Filtering \t\t\t\t\t: %s\n",
+                config->noise_adaptive_filtering == 1 ? "CDEF/Restoration on" :
+                config->noise_adaptive_filtering == 2 ? "Default tune" :
+                config->noise_adaptive_filtering == 3 ? "CDEF only" :
+                config->noise_adaptive_filtering == 4 ? "Restoration only" :
+                                                        "unknown"
+            );
+        }
+
         if (config->cdef_scaling != 15 && config->cdef_level != 0) {
             SVT_INFO("SVT [config]: CDEF scaling (ratio) \t\t\t\t\t\t: %d (%.2fx)\n",
-                     config->cdef_scaling,
-                     config->cdef_scaling / 15.0);
+                config->cdef_scaling,
+                config->cdef_scaling / 15.0
+            );
         }
 
         if (config->enable_qm == 1) {
             SVT_INFO("SVT [config]: Quantization matrices min / max / chroma-min / chroma-max \t: %d / %d / %d / %d\n",
-                    config->min_qm_level,
-                    config->max_qm_level,
-                    config->min_chroma_qm_level,
-                    config->max_chroma_qm_level);
+                config->min_qm_level,
+                config->max_qm_level,
+                config->min_chroma_qm_level,
+                config->max_chroma_qm_level
+            );
         }
 
         if (config->alt_lambda_factors == 1) {
             SVT_INFO("SVT [config]: Alternate RDO lambda factors \t\t\t\t\t: %d\n",
-                    config->alt_lambda_factors);
+                config->alt_lambda_factors);
         }
 
         if (config->sharp_tx == 1) {
             SVT_INFO("SVT [config]: Sharp transform optimization \t\t\t\t\t: %d\n",
-                    config->sharp_tx);
+                config->sharp_tx);
         }
 
         if (config->complex_hvs == 1 || config->hbd_mds != 0) {
             SVT_INFO("SVT [config]: highest complexity HVS model / High bit-depth mode \t\t: %d / %s\n",
-                    config->complex_hvs,
-                    config->hbd_mds == 0 ? "Preset"
-                        : config->hbd_mds == 1 ? "10-bit"
-                        : config->hbd_mds == 2 ? "8/10-bit"
-                                               : "unknown"
-                        );
+                config->complex_hvs,
+                config->hbd_mds == 0 ? "Preset" :
+                config->hbd_mds == 1 ? "10-bit" :
+                config->hbd_mds == 2 ? "8/10-bit" :
+                                       "unknown"
+            );
         }
 
 
