@@ -14,8 +14,6 @@
 .vscode
 .cache/
 Bin
-Build
-build
 compile_commands.json
 test/vectors/
 test/docs/
