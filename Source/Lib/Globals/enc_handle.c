@@ -2415,7 +2415,7 @@ void tf_controls(SequenceControlSet* scs, uint8_t tf_level) {
         scs->tf_params_per_type[0].avoid_2d_qpel           = 0;
         scs->tf_params_per_type[0].use_2tap                = 0;
         scs->tf_params_per_type[0].use_intra_for_noise_est = 0;
-        scs->tf_params_per_type[0].use_8bit_subpel         = 1;
+        scs->tf_params_per_type[0].use_8bit_subpel         = 0;
         scs->tf_params_per_type[0].use_pred_64x64_only_th  = 0;
         scs->tf_params_per_type[0].me_exit_th              = 0;
         scs->tf_params_per_type[0].subpel_early_exit_th    = 0;
@@ -2443,7 +2443,7 @@ void tf_controls(SequenceControlSet* scs, uint8_t tf_level) {
         scs->tf_params_per_type[1].avoid_2d_qpel           = 0;
         scs->tf_params_per_type[1].use_2tap                = 0;
         scs->tf_params_per_type[1].use_intra_for_noise_est = 0;
-        scs->tf_params_per_type[1].use_8bit_subpel         = 1;
+        scs->tf_params_per_type[1].use_8bit_subpel         = 0;
         scs->tf_params_per_type[1].use_pred_64x64_only_th  = 0;
         scs->tf_params_per_type[1].me_exit_th              = 0;
         scs->tf_params_per_type[1].subpel_early_exit_th    = 0;
@@ -2471,7 +2471,7 @@ void tf_controls(SequenceControlSet* scs, uint8_t tf_level) {
         scs->tf_params_per_type[2].avoid_2d_qpel           = 0;
         scs->tf_params_per_type[2].use_2tap                = 0;
         scs->tf_params_per_type[2].use_intra_for_noise_est = 0;
-        scs->tf_params_per_type[2].use_8bit_subpel         = 1;
+        scs->tf_params_per_type[2].use_8bit_subpel         = 0;
         scs->tf_params_per_type[2].use_pred_64x64_only_th  = 0;
         scs->tf_params_per_type[2].me_exit_th              = 0;
         scs->tf_params_per_type[2].subpel_early_exit_th    = 0;
@@ -2498,7 +2498,7 @@ void tf_controls(SequenceControlSet* scs, uint8_t tf_level) {
         scs->tf_params_per_type[0].avoid_2d_qpel           = 0;
         scs->tf_params_per_type[0].use_2tap                = 0;
         scs->tf_params_per_type[0].use_intra_for_noise_est = 0;
-        scs->tf_params_per_type[0].use_8bit_subpel         = 1;
+        scs->tf_params_per_type[0].use_8bit_subpel         = 0;
         scs->tf_params_per_type[0].use_pred_64x64_only_th  = 0;
         scs->tf_params_per_type[0].me_exit_th              = 0;
         scs->tf_params_per_type[0].subpel_early_exit_th    = 0;
@@ -2526,7 +2526,7 @@ void tf_controls(SequenceControlSet* scs, uint8_t tf_level) {
         scs->tf_params_per_type[1].avoid_2d_qpel           = 0;
         scs->tf_params_per_type[1].use_2tap                = 0;
         scs->tf_params_per_type[1].use_intra_for_noise_est = 0;
-        scs->tf_params_per_type[1].use_8bit_subpel         = 1;
+        scs->tf_params_per_type[1].use_8bit_subpel         = 0;
         scs->tf_params_per_type[1].use_pred_64x64_only_th  = 0;
         scs->tf_params_per_type[1].me_exit_th              = 0;
         scs->tf_params_per_type[1].subpel_early_exit_th    = 0;
@@ -2554,7 +2554,7 @@ void tf_controls(SequenceControlSet* scs, uint8_t tf_level) {
         scs->tf_params_per_type[2].avoid_2d_qpel           = 0;
         scs->tf_params_per_type[2].use_2tap                = 0;
         scs->tf_params_per_type[2].use_intra_for_noise_est = 0;
-        scs->tf_params_per_type[2].use_8bit_subpel         = 1;
+        scs->tf_params_per_type[2].use_8bit_subpel         = 0;
         scs->tf_params_per_type[2].use_pred_64x64_only_th  = 0;
         scs->tf_params_per_type[2].me_exit_th              = 0;
         scs->tf_params_per_type[2].subpel_early_exit_th    = 0;
@@ -2581,7 +2581,7 @@ void tf_controls(SequenceControlSet* scs, uint8_t tf_level) {
         scs->tf_params_per_type[0].avoid_2d_qpel           = 0;
         scs->tf_params_per_type[0].use_2tap                = 0;
         scs->tf_params_per_type[0].use_intra_for_noise_est = 0;
-        scs->tf_params_per_type[0].use_8bit_subpel         = 1;
+        scs->tf_params_per_type[0].use_8bit_subpel         = 0;
         scs->tf_params_per_type[0].use_pred_64x64_only_th  = 0;
         scs->tf_params_per_type[0].me_exit_th              = 0;
         scs->tf_params_per_type[0].subpel_early_exit_th    = 0;
@@ -2610,7 +2610,7 @@ void tf_controls(SequenceControlSet* scs, uint8_t tf_level) {
         scs->tf_params_per_type[1].avoid_2d_qpel           = 0;
         scs->tf_params_per_type[1].use_2tap                = 0;
         scs->tf_params_per_type[1].use_intra_for_noise_est = 0;
-        scs->tf_params_per_type[1].use_8bit_subpel         = 1;
+        scs->tf_params_per_type[1].use_8bit_subpel         = 0;
         scs->tf_params_per_type[1].use_pred_64x64_only_th  = 0;
         scs->tf_params_per_type[1].me_exit_th              = 0;
         scs->tf_params_per_type[1].subpel_early_exit_th    = 0;
@@ -2639,7 +2639,7 @@ void tf_controls(SequenceControlSet* scs, uint8_t tf_level) {
         scs->tf_params_per_type[2].avoid_2d_qpel           = 0;
         scs->tf_params_per_type[2].use_2tap                = 0;
         scs->tf_params_per_type[2].use_intra_for_noise_est = 0;
-        scs->tf_params_per_type[2].use_8bit_subpel         = 1;
+        scs->tf_params_per_type[2].use_8bit_subpel         = 0;
         scs->tf_params_per_type[2].use_pred_64x64_only_th  = 0;
         scs->tf_params_per_type[2].me_exit_th              = 0;
         scs->tf_params_per_type[2].subpel_early_exit_th    = 0;
@@ -2665,7 +2665,7 @@ void tf_controls(SequenceControlSet* scs, uint8_t tf_level) {
         scs->tf_params_per_type[0].avoid_2d_qpel           = 0;
         scs->tf_params_per_type[0].use_2tap                = 0;
         scs->tf_params_per_type[0].use_intra_for_noise_est = 0;
-        scs->tf_params_per_type[0].use_8bit_subpel         = 1;
+        scs->tf_params_per_type[0].use_8bit_subpel         = 0;
         scs->tf_params_per_type[0].use_pred_64x64_only_th  = 0;
         scs->tf_params_per_type[0].me_exit_th              = 0;
         scs->tf_params_per_type[0].subpel_early_exit_th    = 1;
@@ -2694,7 +2694,7 @@ void tf_controls(SequenceControlSet* scs, uint8_t tf_level) {
         scs->tf_params_per_type[1].avoid_2d_qpel           = 0;
         scs->tf_params_per_type[1].use_2tap                = 0;
         scs->tf_params_per_type[1].use_intra_for_noise_est = 0;
-        scs->tf_params_per_type[1].use_8bit_subpel         = 1;
+        scs->tf_params_per_type[1].use_8bit_subpel         = 0;
         scs->tf_params_per_type[1].use_pred_64x64_only_th  = 0;
         scs->tf_params_per_type[1].me_exit_th              = 0;
         scs->tf_params_per_type[1].subpel_early_exit_th    = 1;
@@ -2723,7 +2723,7 @@ void tf_controls(SequenceControlSet* scs, uint8_t tf_level) {
         scs->tf_params_per_type[2].avoid_2d_qpel           = 0;
         scs->tf_params_per_type[2].use_2tap                = 0;
         scs->tf_params_per_type[2].use_intra_for_noise_est = 0;
-        scs->tf_params_per_type[2].use_8bit_subpel         = 1;
+        scs->tf_params_per_type[2].use_8bit_subpel         = 0;
         scs->tf_params_per_type[2].use_pred_64x64_only_th  = 0;
         scs->tf_params_per_type[2].me_exit_th              = 0;
         scs->tf_params_per_type[2].subpel_early_exit_th    = 0;
@@ -2749,7 +2749,7 @@ void tf_controls(SequenceControlSet* scs, uint8_t tf_level) {
         scs->tf_params_per_type[0].avoid_2d_qpel           = 0;
         scs->tf_params_per_type[0].use_2tap                = 1;
         scs->tf_params_per_type[0].use_intra_for_noise_est = 0;
-        scs->tf_params_per_type[0].use_8bit_subpel         = 1;
+        scs->tf_params_per_type[0].use_8bit_subpel         = 0;
         scs->tf_params_per_type[0].use_pred_64x64_only_th  = 0;
         scs->tf_params_per_type[0].me_exit_th              = 0;
         scs->tf_params_per_type[0].subpel_early_exit_th    = 1;
@@ -2778,7 +2778,7 @@ void tf_controls(SequenceControlSet* scs, uint8_t tf_level) {
         scs->tf_params_per_type[1].avoid_2d_qpel           = 0;
         scs->tf_params_per_type[1].use_2tap                = 1;
         scs->tf_params_per_type[1].use_intra_for_noise_est = 0;
-        scs->tf_params_per_type[1].use_8bit_subpel         = 1;
+        scs->tf_params_per_type[1].use_8bit_subpel         = 0;
         scs->tf_params_per_type[1].use_pred_64x64_only_th  = 0;
         scs->tf_params_per_type[1].me_exit_th              = 0;
         scs->tf_params_per_type[1].subpel_early_exit_th    = 1;
@@ -2807,7 +2807,7 @@ void tf_controls(SequenceControlSet* scs, uint8_t tf_level) {
         scs->tf_params_per_type[2].avoid_2d_qpel           = 0;
         scs->tf_params_per_type[2].use_2tap                = 1;
         scs->tf_params_per_type[2].use_intra_for_noise_est = 0;
-        scs->tf_params_per_type[2].use_8bit_subpel         = 1;
+        scs->tf_params_per_type[2].use_8bit_subpel         = 0;
         scs->tf_params_per_type[2].use_pred_64x64_only_th  = 0;
         scs->tf_params_per_type[2].me_exit_th              = 0;
         scs->tf_params_per_type[2].subpel_early_exit_th    = 1;
@@ -2833,7 +2833,7 @@ void tf_controls(SequenceControlSet* scs, uint8_t tf_level) {
         scs->tf_params_per_type[0].avoid_2d_qpel           = 1;
         scs->tf_params_per_type[0].use_2tap                = 1;
         scs->tf_params_per_type[0].use_intra_for_noise_est = 1;
-        scs->tf_params_per_type[0].use_8bit_subpel         = 1;
+        scs->tf_params_per_type[0].use_8bit_subpel         = 0;
         scs->tf_params_per_type[0].use_pred_64x64_only_th  = 0;
         scs->tf_params_per_type[0].me_exit_th              = 0;
         scs->tf_params_per_type[0].subpel_early_exit_th    = 1;
@@ -2861,7 +2861,7 @@ void tf_controls(SequenceControlSet* scs, uint8_t tf_level) {
         scs->tf_params_per_type[1].avoid_2d_qpel           = 0;
         scs->tf_params_per_type[1].use_2tap                = 1;
         scs->tf_params_per_type[1].use_intra_for_noise_est = 1;
-        scs->tf_params_per_type[1].use_8bit_subpel         = 1;
+        scs->tf_params_per_type[1].use_8bit_subpel         = 0;
         scs->tf_params_per_type[1].use_pred_64x64_only_th  = 0;
         scs->tf_params_per_type[1].me_exit_th              = 0;
         scs->tf_params_per_type[1].subpel_early_exit_th    = 1;
@@ -2889,7 +2889,7 @@ void tf_controls(SequenceControlSet* scs, uint8_t tf_level) {
         scs->tf_params_per_type[0].avoid_2d_qpel           = 1;
         scs->tf_params_per_type[0].use_2tap                = 1;
         scs->tf_params_per_type[0].use_intra_for_noise_est = 1;
-        scs->tf_params_per_type[0].use_8bit_subpel         = 1;
+        scs->tf_params_per_type[0].use_8bit_subpel         = 0;
         scs->tf_params_per_type[0].use_pred_64x64_only_th  = 35;
         scs->tf_params_per_type[0].me_exit_th              = 16 * 16;
         scs->tf_params_per_type[0].subpel_early_exit_th    = 1;
@@ -2917,7 +2917,7 @@ void tf_controls(SequenceControlSet* scs, uint8_t tf_level) {
         scs->tf_params_per_type[1].avoid_2d_qpel           = 0;
         scs->tf_params_per_type[1].use_2tap                = 1;
         scs->tf_params_per_type[1].use_intra_for_noise_est = 1;
-        scs->tf_params_per_type[1].use_8bit_subpel         = 1;
+        scs->tf_params_per_type[1].use_8bit_subpel         = 0;
         scs->tf_params_per_type[1].use_pred_64x64_only_th  = 35;
         scs->tf_params_per_type[1].me_exit_th              = 16 * 16;
         scs->tf_params_per_type[1].subpel_early_exit_th    = 1;
@@ -2945,7 +2945,7 @@ void tf_controls(SequenceControlSet* scs, uint8_t tf_level) {
         scs->tf_params_per_type[0].avoid_2d_qpel           = 1;
         scs->tf_params_per_type[0].use_2tap                = 1;
         scs->tf_params_per_type[0].use_intra_for_noise_est = 1;
-        scs->tf_params_per_type[0].use_8bit_subpel         = 1;
+        scs->tf_params_per_type[0].use_8bit_subpel         = 0;
         scs->tf_params_per_type[0].use_pred_64x64_only_th  = 35;
         scs->tf_params_per_type[0].me_exit_th              = 16 * 16;
         scs->tf_params_per_type[0].subpel_early_exit_th    = 4;
@@ -2973,7 +2973,7 @@ void tf_controls(SequenceControlSet* scs, uint8_t tf_level) {
         scs->tf_params_per_type[1].avoid_2d_qpel           = 1;
         scs->tf_params_per_type[1].use_2tap                = 1;
         scs->tf_params_per_type[1].use_intra_for_noise_est = 1;
-        scs->tf_params_per_type[1].use_8bit_subpel         = 1;
+        scs->tf_params_per_type[1].use_8bit_subpel         = 0;
         scs->tf_params_per_type[1].use_pred_64x64_only_th  = 35;
         scs->tf_params_per_type[1].me_exit_th              = 16 * 16;
         scs->tf_params_per_type[1].subpel_early_exit_th    = 4;
@@ -3001,7 +3001,7 @@ void tf_controls(SequenceControlSet* scs, uint8_t tf_level) {
         scs->tf_params_per_type[0].avoid_2d_qpel           = 1;
         scs->tf_params_per_type[0].use_2tap                = 1;
         scs->tf_params_per_type[0].use_intra_for_noise_est = 1;
-        scs->tf_params_per_type[0].use_8bit_subpel         = 1;
+        scs->tf_params_per_type[0].use_8bit_subpel         = 0;
         scs->tf_params_per_type[0].use_pred_64x64_only_th  = 35;
         scs->tf_params_per_type[0].me_exit_th              = 16 * 16;
         scs->tf_params_per_type[0].subpel_early_exit_th    = 4;
@@ -3029,7 +3029,7 @@ void tf_controls(SequenceControlSet* scs, uint8_t tf_level) {
         scs->tf_params_per_type[1].avoid_2d_qpel           = 1;
         scs->tf_params_per_type[1].use_2tap                = 1;
         scs->tf_params_per_type[1].use_intra_for_noise_est = 1;
-        scs->tf_params_per_type[1].use_8bit_subpel         = 1;
+        scs->tf_params_per_type[1].use_8bit_subpel         = 0;
         scs->tf_params_per_type[1].use_pred_64x64_only_th  = 35;
         scs->tf_params_per_type[1].me_exit_th              = 16 * 16;
         scs->tf_params_per_type[1].subpel_early_exit_th    = 4;
@@ -4683,6 +4683,33 @@ EB_API EbErrorType svt_av1_enc_set_parameter(EbComponentType*          svt_enc_c
         scs->seq_header.still_picture                = 1;
         scs->seq_header.reduced_still_picture_header = 1;
     }
+
+    // Signal initial_display_delay in the sequence header for hierarchical coding.
+    // With hierarchical B-frames, the encoder bundles multiple non-displayable reference
+    // frames into a single temporal unit (TU). The decoder must process all frames in a
+    // TU before displaying the first frame. Without this signal, players may start audio
+    // playback before video is ready after a seek, causing A/V desync — especially
+    // noticeable with hierarchical_levels >= 4 where the TU can contain 5-6 coded frames.
+    //
+    // Per AV1 spec section 6.4.1: initial_display_delay is "the number of decoded frames
+    // that should be present in the buffer pool before the first presentable frame is
+    // displayed." For the TU-based output of SVT-AV1, this equals hierarchical_levels + 1
+    // (the base layer frame + all intermediate reference frames that must be decoded
+    // before the first leaf frame is displayable).
+    if (!scs->seq_header.reduced_still_picture_header) {
+        uint8_t hierarchical_levels = scs->static_config.hierarchical_levels;
+        // The display delay equals the number of frames in the first non-keyframe TU:
+        // one frame per temporal layer (layers 0 through hierarchical_levels-1 are
+        // non-displayable, layer hierarchical_levels is displayable), so the decoder
+        // must buffer hierarchical_levels + 1 frames before first display.
+        // Capped at 10 per AV1 spec (4 bits, max value 10).
+        uint8_t display_delay = AOMMIN(hierarchical_levels + 1, 10);
+
+        scs->seq_header.initial_display_delay_present_flag                           = 1;
+        scs->seq_header.operating_point[0].initial_display_delay_present_for_this_op = 1;
+        scs->seq_header.operating_point[0].initial_display_delay                     = display_delay;
+    }
+
     set_param_based_on_input(scs);
     // Initialize the Prediction Structure Group
     EB_NO_THROW_NEW(enc_handle->scs_instance->enc_ctx->prediction_structure_group_ptr,
