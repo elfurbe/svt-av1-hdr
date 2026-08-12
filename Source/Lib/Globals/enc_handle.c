@@ -4649,13 +4649,6 @@ static void copy_api_from_app(SequenceControlSet* scs, EbSvtAv1EncConfiguration*
         scs->static_config.tx_bias                      = 1;
     }
 
-    // Override Variance Boost curve for PQ transfer
-    if (scs->static_config.enable_variance_boost &&
-        scs->static_config.transfer_characteristics == EB_CICP_TC_SMPTE_2084) {
-        SVT_INFO("HDR content with PQ transfer detected, switching to PQ-optimized curve\n");
-        scs->static_config.variance_boost_curve = 3;
-    }
-
     return;
 }
 
@@ -5585,7 +5578,7 @@ EB_API const char* svt_hdr_get_version(void) {
 
 EB_API void svt_av1_print_version(void) {
     SVT_INFO("-------------------------------------------\n");
-    SVT_INFO("SVT [version]:\tSVT-AV1-HDR Encoder Lib %s \"Chromedome\"\n", SVT_AV1_CVS_VERSION);
+    SVT_INFO("SVT [version]:\tSVT-AV1-HDR Encoder Lib %s\n", SVT_AV1_CVS_VERSION);
     const char* compiler =
 #if defined(__clang__) && defined(__apple_build_version__)
         __VERSION__ "\t"
