@@ -2282,6 +2282,7 @@ EB_API EbErrorType svt_av1_enc_parse_parameter(EbSvtAv1EncConfiguration *config_
 
     if (!strcmp(name, "rc")) {
         return str_to_rc_mode(value, &config_struct->rate_control_mode, &config_struct->aq_mode);
+    }
 
     // custom enum fields
     if (!strcmp(name, "profile"))
