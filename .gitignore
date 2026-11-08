@@ -13,6 +13,10 @@
 *.log
 .vscode
 .cache/
+.github/
+.gitlab/
+.gitlab-ci.yml
+Dockerfile
 Bin
 Build
 build
