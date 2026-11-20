@@ -1479,7 +1479,7 @@ void svt_av1_print_lib_params(SequenceControlSet* scs) {
 
         switch (config->enable_tf) {
         case 1:
-            SVT_INFO("SVT [config]: temporal tiltering strength / keyframe strength \t\t\t: %d / %d \n",
+            SVT_INFO("SVT [config]: temporal filtering strength / keyframe strength \t\t\t: %d / %d \n",
                      config->tf_strength,
                      config->kf_tf_strength);
             break;
